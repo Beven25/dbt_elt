@@ -1,4 +1,4 @@
-your_profile_name: default
+default:
   target: dev  # You can specify different targets (e.g., dev, prod)
   outputs:
     dev:
@@ -7,8 +7,8 @@ your_profile_name: default
       project: data-management-2-421815  # Replace with your GCP project ID
       dataset: weather_quality_climate  # Replace with your BigQuery dataset name
       location: europe-west3  # Replace with the location of your dataset
-      threads: 1  # Number of threads to use for concurrent queries (optional)
-      timeout_seconds: 300  # Timeout for queries in seconds (optional)
-      priority: interactive  # Query priority (optional, choose from interactive or batch)
+      threads: 4
+      timeout_seconds: 300
+      priority: interactive
       keyfile: "{{ env_var('BIGQUERY_KEYFILE') }}"
 
