@@ -10,4 +10,5 @@ your_profile_name:  # Replace with your profile name
       threads: 1  # Number of threads to use for concurrent queries (optional)
       timeout_seconds: 300  # Timeout for queries in seconds (optional)
       priority: interactive  # Query priority (optional, choose from interactive or batch)
+      keyfile: "{{ env_var('BIGQUERY_KEYFILE') }}"
 
