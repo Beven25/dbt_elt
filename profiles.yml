@@ -1,4 +1,4 @@
-your_profile_name:  # Replace with your profile name
+your_profile_name: default
   target: dev  # You can specify different targets (e.g., dev, prod)
   outputs:
     dev:
