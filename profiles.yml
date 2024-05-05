@@ -1,0 +1,14 @@
+default:
+  target: dev  # You can specify different targets (e.g., dev, prod)
+  outputs:
+    dev:
+      type: bigquery
+      method: service-account
+      project: data-management-2-421815  # Replace with your GCP project ID
+      dataset: weather_quality_climate  # Replace with your BigQuery dataset name
+      location: europe-west3  # Replace with the location of your dataset
+      threads: 4
+      timeout_seconds: 300
+      priority: interactive
+      keyfile: "{{ env_var('BIGQUERY_KEYFILE') }}"
+
