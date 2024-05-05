@@ -1,3 +1,5 @@
+version: 2
+
 models:
   - name: env_facts_table
     description: "Fact table containing environmental data."
